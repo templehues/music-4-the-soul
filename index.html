@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I Love Music</title>
+  </head>
+  <style>
+    body {
+      background-color: #943d2c;
+      border-color: #dcb672;
+      border-width: 30px;
+      border-radius: 20px;
+      margin: 40px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      color: #cab487;
+    }
+    h2 {
+      text-align: center;
+      color: #cab487;
+      padding: 0 0 24px;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    p {
+      line-height: 1.5;
+      font-size: 13px;
+      margin: 20px 0 10px;
+      color: white;
+      padding: 0 0 24px;
+    }
+    .container {
+      max-height: 600px;
+      margin: 0 auto;
+      padding: 15px 60px;
+    }
+    a {
+      color: #444041;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #dcb672;
+    }
+    .music-genre {
+      color: #253045;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    }
+    .playlists {
+      text-align: center;
+      margin-left: 30px;
+      display: block;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      background: #8e3b2a;
+      color: #cab487;
+      font-size: 20px;
+      padding: 15px 20px;
+      border: 1px solid #cab487;
+      border-radius: 30px;
+      box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2);
+      transition: all 200ms ease-in-out;
+      line-height: 22px;
+      text-decoration: wavy;
+    }
+    button:hover {
+      color: #8e3b2a;
+      background: #cab487;
+      cursor: pointer;
+      opacity: 0.9;
+    }
+    .subscribe {
+      text-align: center;
+      margin-left: 30px;
+    }
+    .footer {
+      text-align: center;
+      background: linear-gradient(#943d2c, #af412b);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Music that Feeds The Soul...</h1>
+      <img
+        src="https://i.pinimg.com/564x/e8/e0/32/e8e032b0c797715712175154cbd6dd03.jpg"
+        alt="cd albums"
+      />
+      <p>
+        R&B and soul are two genres that I believe are the perfect way to uplift
+        and show one's emotions. R&B, also known as Rhythm & Blues, has roots in
+        musical genres like
+        <span class="music-genre"
+          >jazz, blues, gospel, boogie-woogie, and jump blues</span
+        >. R&B originated in the 1940s, dominated the charts, took over in the
+        1960s, and took the world by storm. Soul roots come from gospel music,
+        and R&B originated in the late 1950s but only started dominating
+        international charts in the 1960s. Hip-hop is both a musical genre and a
+        culture among black people. Hip-hop originated in the 1970s by African
+        Americans in Brox, New York; it was only in the 1980s that it was
+        diversified, developed into more complex styles, and spread around the
+        world.
+        <br />
+        <br />These 3 genres have a greater impact on the black community and
+        have helped black people voice out their struggles and emotions and help
+        cope with them. Hip-hop is more education when it comes to learning
+        about the political problems POC face in different parts of the world,
+        but it also helps artists express problems and emotions they cannot talk
+        about. Music is by far the best way to express your thoughts and every
+        emotion you can think of, from extremely happy to depressed if you need
+        a way to express yourself. Listen to music, or make music! 😄
+      </p>
+      <br />
+      <hr />
+      <h2>All Music is Great Music but, Nothing Beats The 90s.</h2>
+      <p class="playlists">
+        Here's a few playlists to get you started on some good music !
+      </p>
+      <a
+        href="https://music.apple.com/za/playlist/gold-school/pl.u-mJy88L7uNmP23WP"
+        target="_blank"
+        class="music-to-listen to"
+      >
+        Gold School 📻</a
+      >
+      <a
+        href="https://music.apple.com/za/playlist/nostalgia/pl.u-yZyVVxLudozvpV7"
+        target="_blank"
+        class="music-to-listen to"
+      >
+        Nostalgia. 🧘🏽‍♂️</a
+      >
+      <a
+        href="https://music.apple.com/za/playlist/neo-soul/pl.u-aZb00D7t1l6Je26"
+        target="_blank"
+        class="music-to-listen to"
+        >Neo-Soul 🎷</a
+      >
+      <p class="subscribe">
+        If you want to subscribe to more great playlists below:
+      </p>
+      <button class="listen-button">Listen Now</button>
+      <p class="footer">This page was built by Neo Phansi</p>
+    </div>
+  </body>
+  <script>
+    function listenButton() {
+      let name = prompt("What is your name?");
+      let email = prompt("What is your email?");
+      if (name.length) {
+        alert("Thank You, " + name + "! Happy Listening!");
+      } else {
+        alert("Please fill in your details.");
+      }
+    }
+
+    let musicButton = document.querySelector("button");
+    musicButton.addEventListener("click", listenButton);
+  </script>
+</html>
